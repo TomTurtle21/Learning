@@ -1,0 +1,29 @@
+void main (){
+  
+  print ('hello');
+  
+  var weather = 'Sunny';
+ 
+  if (weather == 'Sunny'){
+    print ('Go Get Sunglasses');}
+      else
+      {
+       print ('continue');
+      }
+ class Person{
+   
+   String name;
+   int age;
+   String? sex;
+   
+   
+   Person(this.name,this.age,this.sex);
+ }
+  
+  
+  import 'dart:convert';
+  
+  void main(){
+    
+    final jsonString=
+      
