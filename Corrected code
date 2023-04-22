@@ -1,0 +1,29 @@
+import 'dart:convert';
+
+void main() {
+  print('hello');
+
+  var weather = 'Sunny';
+
+  if (weather == 'Sunny') {
+    print('Go Get Sunglasses');
+  } else {
+    print('continue');
+  }
+  
+  // Define the Person class
+  class Person {
+    String name;
+    int age;
+    String? sex;
+
+    Person(this.name, this.age, this.sex);
+  }
+
+  // Create a new Person object
+  Person myPerson = new Person('Alice', 25, 'female');
+  
+  // Use JSON encoding to convert the Person object to a string
+  String myPersonJson = jsonEncode(myPerson);
+  print('My person object: $myPersonJson');
+}
